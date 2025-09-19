@@ -1,0 +1,29 @@
+# Colors (Monokai)
+[colors]
+primary.background = "#272822"
+primary.foreground =  "#F8F8F2"
+
+cursor.text = "#272822"
+cursor.cursor = "#F8F8F2"
+
+selection.foreground = "#AE81FF"
+selection.background = "#AE81FF"
+
+normal.black = "#272822"
+normal.red = "#F92672"
+normal.green = "#A6E22E"
+normal.yellow = "#F4BF75"
+normal.blue = "#66D9EF"
+normal.magenta = "#AE81FF"
+normal.cyan = "#A1EFE4"
+normal.white = "#F8F8F2"
+
+bright.black = "#75715E"
+bright.red = "#F92672"
+bright.green = "#A6E22E"
+bright.yellow = "#F4BF75"
+bright.blue = "#66D9EF"
+bright.magenta = "#AE81FF"
+bright.cyan = "#A1EFE4"
+bright.white = "#F9F8F5"
+

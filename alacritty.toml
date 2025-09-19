@@ -1,0 +1,69 @@
+
+# Alacritty configuration
+
+# Shell
+[terminal.shell]
+program = "/bin/bash"
+args = ["-l"]
+
+# Font
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "semibold" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 11.0
+
+#----------------
+# ini bari tema warna
+
+#--------------------
+# Keybindings
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "N"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
+
+# Keybindings for scrolling
+[[keyboard.bindings]]
+key = "Up"
+mods = "Shift"
+action = "ScrollLineUp"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Shift"
+action = "ScrollLineDown"
+
+# Window
+[window]
+dimensions = { columns = 120, lines = 30 }
+padding = { x = 10, y = 10 }
+decorations = "full"
+opacity = 0.9
+blur = true
+
+# Scrolling
+[scrolling]
+history = 10000
+multiplier = 3
+
+
+
+# Cursor
+[cursor]
+style = { shape = "Block", blinking = "On" }
+thickness = 0.15
+
+[terminal]
