@@ -15,15 +15,16 @@ bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 size = 11.0
 
 #----------------
-# ini bari tema warna
+# ini baris tema warna
 
 #colors (Monokai)
 [colors]
-primary.background = "#272822"
-primary.foreground =  "#F8F8F2"
+primary.background = "#272822" #ini mengahandle warna bagian warna background
+#primary.foreground = "#66D9EF"
+primary.foreground =  "#F8F8F2" # ini menghandle warna foreground, termasuk text disni, properti ini juga untuk memberi warna text
 
-cursor.text = "#272822"
-cursor.cursor = "#F8F8F2"
+cursor.text = "#272822" #ini warna kalau text saat di block, 
+cursor.cursor = "#F8F8F2" #ini warna untuk cursor
 
 selection.foreground = "#AE81FF"
 selection.background = "#AE81FF"
@@ -33,6 +34,7 @@ normal.red = "#F92672"
 normal.green = "#A6E22E"
 normal.yellow = "#F4BF75"
 normal.blue = "#66D9EF"
+#normal.blue = "#00008B" #biru tua
 normal.magenta = "#AE81FF"
 normal.cyan = "#A1EFE4"
 normal.white = "#F8F8F2"
@@ -81,8 +83,10 @@ action = "ScrollLineDown"
 dimensions = { columns = 120, lines = 30 }
 padding = { x = 10, y = 10 }
 decorations = "full"
-opacity = 0.9
+opacity = 0.8
 blur = true
+startup_mode = "Maximized"
+decorations_theme_variant = "Dark"
 
 # Scrolling
 [scrolling]
@@ -93,7 +97,7 @@ multiplier = 3
 
 # Cursor
 [cursor]
-style = { shape = "Block", blinking = "On" }
+style = { shape = "Block", blinking = "Always" }
 thickness = 0.15
 
 [terminal]
