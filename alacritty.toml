@@ -3,53 +3,68 @@
 
 # Shell
 [terminal.shell]
-program = "/bin/bash"
+# program = "/bin/bash"
+program = "/bin/zsh"
 args = ["-l"]
 
 # Font
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style = "semibold" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
-italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+italic = { family = "JetBrainsMono Nerd Font", style = "bold Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
-size = 11.0
+size = 9
 
 #----------------
 # ini baris tema warna
 
-#colors (Monokai)
+
+# untuk warna silahkan ambil di folder warna lalu paste di sini
+
 [colors]
-primary.background = "#272822" #ini mengahandle warna bagian warna background
-#primary.foreground = "#66D9EF"
-primary.foreground =  "#F8F8F2" # ini menghandle warna foreground, termasuk text disni, properti ini juga untuk memberi warna text
+#ini termasuk warna cursor 
+# Colors (github)
+# primary.foreground =  "#F8F8F2"
+# primary.background = "#272822"
+ # primary.background = "#1d2021" #ini hitam pekat
+# "#010409" #ini rekomendasi hitam pekat juga
 
-cursor.text = "#272822" #ini warna kalau text saat di block, 
-cursor.cursor = "#F8F8F2" #ini warna untuk cursor
+[colors.primary]
+foreground = "#f0f3f6"
+background = "#010409"
 
-selection.foreground = "#AE81FF"
-selection.background = "#AE81FF"
+[colors.cursor]
+text = "#010409"
+# cursor = "#f0f3f6"
+cursor = "#FFFF00"
 
-normal.black = "#272822"
-normal.red = "#F92672"
-normal.green = "#A6E22E"
-normal.yellow = "#F4BF75"
-normal.blue = "#66D9EF"
-#normal.blue = "#00008B" #biru tua
-normal.magenta = "#AE81FF"
-normal.cyan = "#A1EFE4"
-normal.white = "#F8F8F2"
+[colors.selection]
+text = "#f7c843"
+background = "#ffffff"
 
-bright.black = "#75715E"
-bright.red = "#F92672"
-bright.green = "#A6E22E"
-bright.yellow = "#F4BF75"
-bright.blue = "#66D9EF"
-bright.magenta = "#AE81FF"
-bright.cyan = "#A1EFE4"
-bright.white = "#F9F8F5"
+[colors.normal]
+black = "#7a828e"
+red = "#ff9492"
+green = "#26cd4d"
+yellow = "#f0b72f"
+blue = "#71b7ff"
+magenta = "#cb9eff"
+cyan = "#39c5cf"
+white = "#d9dee3"
 
-
+[colors.bright]
+black = "#9ea7b3"
+red = "#ffb1af"
+green = "#4ae168"
+yellow = "#f7c843"
+blue = "#91cbff"
+magenta = "#dbb7ff"
+cyan = "#56d4dd"
+white = "#ffffff"
 #-----------------------
+
+
+
 # Keybindings
 [[keyboard.bindings]]
 key = "V"
@@ -81,7 +96,7 @@ action = "ScrollLineDown"
 # Window
 [window]
 dimensions = { columns = 120, lines = 30 }
-padding = { x = 10, y = 10 }
+padding = { x = 5, y = 5 }
 decorations = "full"
 opacity = 0.8
 blur = true
@@ -94,10 +109,10 @@ history = 10000
 multiplier = 3
 
 
-
 # Cursor
 [cursor]
 style = { shape = "Block", blinking = "Always" }
-thickness = 0.15
 
-[terminal]
+[bell]
+animation = "Ease"
+
